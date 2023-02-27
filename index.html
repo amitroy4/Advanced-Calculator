@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>CALCULATION PROJECT</h1>
+        <section class="calculation">
+            <div class="box">
+                <div class="add_box">
+                    <h5 class="add_title">Addition</h5>
+                    <input class="add" type="text" placeholder="Enter a number">
+                </div>
+                <div class="division_box">
+                    <h5 class="division_title">Division</h5>
+                    <input class="division" type="text" placeholder="Enter a number">
+                </div>
+                <div class="multipication_box">
+                    <h5 class="multipication_title">Multiplication</h5>
+                    <input class="multipication" type="text" placeholder="Enter a number">
+                </div>
+                <div class="substraction_box">
+                    <h5 class="substraction_title">Substraction</h5>
+                    <input class="substraction" type="text" placeholder="Enter a number">
+                </div>
+                <button class="button">Submit</button>
+                <button class="reset_button">Reset</button>
+                <div class="num_error">
+                    <h4 class="number" data-timer="1"></h4>
+                    <h5 class="error_msg" data-timer="100"></h5>
+                </div>
+
+            </div>
+            <div class="list_box">
+                <h4>History</h4>
+                <ul>
+                </ul>
+            </div>
+        </section>
+        <div class="popup">
+            <button id="close">&times;</button>
+            <div class="rules_bg">
+                <h2>Rules</h2>
+                <p>
+                    1. When Value is 0. Only addition Operation Allowed. <br>
+                    2. When value is greater then 10000. No Operation Allowed. <br>
+                    3. For DIVISION & MULTIPLICATION - the input value must be larger than 0. <br>
+                    4. DIVISION is allowed when count value is greater than input value. <br>
+                    5. Input value must be an integer number. Negative numbers are not allowed.
+                </p>
+            </div>
+        </div>
+        <div id="myProgress">
+            <div id="myBar"></div>
+        </div>
+        <marquee> This project is created by team <span class="sb">SMART BANGLADESH</span>. Copyright <i
+                class="fa-regular fa-copyright"></i> 2023 <span class="sb">SMART BANGLADESH</span> | All Right Reserved
+        </marquee>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
